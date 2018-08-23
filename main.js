@@ -82,10 +82,6 @@ window.addEventListener('load', function (event) {
   button2Top = document.getElementById("button_to_top");
   button2Top.onclick = function() {
     window.scrollTo(0,0);
-
-    setTimeout(()=>{
-      buttonScrollToTopView.style.display = "none";
-    }, 1000)
   }
   buttonScrollToTopView.style.display = "none";
 
@@ -94,5 +90,9 @@ window.addEventListener('load', function (event) {
 });
 
 window.onscroll = function (e) {
-  buttonScrollToTopView.style.display = "inline-block";
+  if(document.documentElement.scrollTop > 0 ) {
+    buttonScrollToTopView.style.display = "inline-block";
+  } else {
+    buttonScrollToTopView.style.display = "none";
+  }
 } 
