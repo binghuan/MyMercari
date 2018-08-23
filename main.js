@@ -1,16 +1,16 @@
-const DBG = true;
 
-let getCatagories =
+
+let getCategories =
   function () {
-    if (DBG) console.log('>> getCatagories');
+    if (DBG) console.log('>> getCategories');
     // fetch('http://127.0.0.1:5000/categories')
     fetch(getHost() + '/categories.json')
       .then(function (response) {
         return response.json();
       })
       .then(function (myJson) {
-        if (DBG) console.log('getCatagories:', myJson);
-        setupCatagory(myJson.data);
+        if (DBG) console.log('getCategories:', myJson);
+        setupCategory(myJson.data);
       });
   }
 
@@ -29,7 +29,8 @@ let getItems =
 
 let setupItemList = function (data) {
   if (DBG) console.log('>> setupItemList: ', data);
-  itemList = document.getElementById('item_list');
+  
+
   for (let i = 0; i < data.length; i++) {
     let itemInfo = data[i];
     let item = document.getElementById('item_template').cloneNode(true);
@@ -42,18 +43,17 @@ let setupItemList = function (data) {
     colums[4].innerText = itemInfo.like_count;
 
     item.setAttribute('id', itemInfo.id);
-    item.onclick = function () {showItemDetail(itemInfo.id);};
-
+    item.onclick = function () { showItemDetail(itemInfo.id); };
 
     itemList.appendChild(item);
   }
 
 }
 
-let setupCatagory =
+let setupCategory =
   function (data) {
-    if (DBG) console.log('>> setupCatagory: ', data);
-    categorySelector = document.getElementById('catagory_selector');
+    if (DBG) console.log('>> setupCategory: ', data);
+    categorySelector = document.getElementById('category_selector');
     for (let i = 0; i < data.length; i++) {
       let tile = document.getElementById('category_template').cloneNode(true);
       tile.getElementsByTagName('span')[0].innerText = data[i].name;
@@ -63,16 +63,36 @@ let setupCatagory =
     }
   }
 
-let showItemDetail = function(id) {
-  if(DBG)console.log(">> showItemDetail:", id);
+let showItemDetail = function (id) {
+  if (DBG) console.log(">> showItemDetail:", id);
   window.location.href = "detail.html?id=" + id;
 }
 
 let categorySelector = null;
 let itemList = null;
+let buttonScrollToTopView = null;
+let button2Top = null;
 
 window.addEventListener('load', function (event) {
   if (DBG) console.log('All resources finished loading!');
-  getCatagories();
+
+  
+  itemList = document.getElementById('item_list');
+  buttonScrollToTopView = document.getElementById('button_to_top_area');
+  button2Top = document.getElementById("button_to_top");
+  button2Top.onclick = function() {
+    window.scrollTo(0,0);
+
+    setTimeout(()=>{
+      buttonScrollToTopView.style.display = "none";
+    }, 1000)
+  }
+  buttonScrollToTopView.style.display = "none";
+
+  getCategories();
   getItems();
 });
+
+window.onscroll = function (e) {
+  buttonScrollToTopView.style.display = "inline-block";
+} 
