@@ -36,11 +36,9 @@ let setupItemList = function (data) {
     let item = document.getElementById('item_template').cloneNode(true);
     item.style.display = "inline-block";
     let colums = item.getElementsByTagName("span");
-    colums[0].innerText = itemInfo.name;
-    colums[1].innerText = itemInfo.shippingFee;
-    colums[2].innerText = "N/A";
-    colums[3].innerText = itemInfo.price;
-    colums[4].innerText = itemInfo.like_count;
+    colums[0].innerText = itemInfo.name + ", " + itemInfo.description;
+    colums[1].innerText = itemInfo.price;
+    colums[2].innerText = itemInfo.like_count;
 
     item.setAttribute('id', itemInfo.id);
     item.onclick = function () { showItemDetail(itemInfo.id); };
