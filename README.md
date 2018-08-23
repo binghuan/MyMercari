@@ -10,7 +10,7 @@
 ![](./slides/Slide6.png)
 ![](./slides/Slide7.png)
 
-## Coding Quest from Mercari
+## Coding Quest from Mercari jp
 
 ### Pre-Conditions
 
