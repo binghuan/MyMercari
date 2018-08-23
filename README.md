@@ -1,6 +1,6 @@
 # MyMercari
 
-<https://binghuan.github.io/MyMercari>
+<a href="https://binghuan.github.io/MyMercari" target="_blank">https://binghuan.github.io/MyMercari</a>
 
 ![](./demo.gif)
 
