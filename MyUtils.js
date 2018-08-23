@@ -2,7 +2,7 @@ const DBG = window.location.hostname == "127.0.0.1" || window.location.hostname 
 
 let getHost = function () {
     if (location.host == "binghuan.github.io") {
-        return location.protocol + "//" + location.host + "/MyMercari/fakeData" ;
+        return location.protocol + "//" + location.host + "/MyMercari/fakeData/" ;
     } else {
         return location.protocol + "//" + location.host + "/fakeData/";
     }
