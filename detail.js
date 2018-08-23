@@ -15,7 +15,7 @@ let getParameterByName =
 let getItemDetailInfo =
     function () {
         // fetch('http://127.0.0.1:5000/items')
-        fetch('http://127.0.0.1:8080/1.json')
+        fetch(getHost() + '/1.json')
             .then(function (response) {
                 return response.json();
             })

@@ -4,7 +4,7 @@ let getCatagories =
   function () {
     if (DBG) console.log('>> getCatagories');
     // fetch('http://127.0.0.1:5000/categories')
-    fetch('http://127.0.0.1:8080/categories.json')
+    fetch(getHost() + '/categories.json')
       .then(function (response) {
         return response.json();
       })
@@ -17,7 +17,7 @@ let getCatagories =
 let getItems =
   function () {
     //fetch('http://127.0.0.1:5000/items')
-    fetch('http://127.0.0.1:8080/items.json')
+    fetch(getHost() + '/items.json')
       .then(function (response) {
         return response.json();
       })
