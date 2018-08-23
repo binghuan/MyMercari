@@ -124,3 +124,11 @@
     text-align: center;
     margin-top: 90px;
 }
+
+.button_create {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+}

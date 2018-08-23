@@ -29,7 +29,7 @@ let getItems =
 
 let setupItemList = function (data) {
   if (DBG) console.log('>> setupItemList: ', data);
-  
+
 
   for (let i = 0; i < data.length; i++) {
     let itemInfo = data[i];
@@ -41,7 +41,7 @@ let setupItemList = function (data) {
     colums[2].innerText = itemInfo.like_count;
 
     item.getElementsByTagName("div")[0].style.backgroundImage = 'url(' + itemInfo.image + ')';
-    item.getElementsByTagName("img")[0].style.visibility = itemInfo.isSoldOut?"visible":"hidden";
+    item.getElementsByTagName("img")[0].style.visibility = itemInfo.isSoldOut ? "visible" : "hidden";
     item.setAttribute('id', itemInfo.id);
     item.onclick = function () { showItemDetail(itemInfo.id); };
 
@@ -76,12 +76,11 @@ let button2Top = null;
 window.addEventListener('load', function (event) {
   if (DBG) console.log('All resources finished loading!');
 
-  
   itemList = document.getElementById('item_list');
   buttonScrollToTopView = document.getElementById('button_to_top_area');
   button2Top = document.getElementById("button_to_top");
-  button2Top.onclick = function() {
-    window.scrollTo(0,0);
+  button2Top.onclick = function () {
+    window.scrollTo(0, 0);
   }
   buttonScrollToTopView.style.display = "none";
 
@@ -90,7 +89,7 @@ window.addEventListener('load', function (event) {
 });
 
 window.onscroll = function (e) {
-  if(document.documentElement.scrollTop > 0 || document.body.scrollTop > 0 ) {
+  if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
     buttonScrollToTopView.style.display = "inline-block";
   } else {
     buttonScrollToTopView.style.display = "none";
