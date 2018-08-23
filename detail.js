@@ -10,9 +10,9 @@ let getParameterByName =
 }
 
 let getItemDetailInfo =
-    function() {
+    function(id) {
   // fetch('http://127.0.0.1:5000/items')
-  fetch(getHost() + '1.json')
+  fetch(getHost() + id + '.json')
       .then(function(response) {
         return response.json();
       })
@@ -44,6 +44,9 @@ let setupItemInfo =
 
   let itemShippingFee = document.getElementById('item_shipping_fee');
   itemShippingFee.innerText = data.shippingFee;
+
+  let itemImg = document.getElementById('item_image');
+  itemImg.src = data.image;
 }
 
     window.addEventListener('load', function(event) {
@@ -54,5 +57,7 @@ let setupItemInfo =
         window.location.href = 'index.html';
       }
 
-      getItemDetailInfo();
+      let id = getParameterByName("id");
+
+      getItemDetailInfo(id);
     });
