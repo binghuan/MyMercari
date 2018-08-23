@@ -2,8 +2,13 @@
 
 <https://binghuan.github.io/MyMercari>
 
-
-
+![](./slides/Slide1.png)
+![](./slides/Slide2.png)
+![](./slides/Slide3.png)
+![](./slides/Slide4.png)
+![](./slides/Slide5.png)
+![](./slides/Slide6.png)
+![](./slides/Slide7.png)
 
 ## Coding Quest from Mercari
 
