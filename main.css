@@ -132,3 +132,7 @@
     width: 100px;
     height: 100px;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
