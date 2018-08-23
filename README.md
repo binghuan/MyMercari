@@ -2,6 +2,8 @@
 
 <https://binghuan.github.io/MyMercari>
 
+![](./demo.gif)
+
 ![](./slides/Slide1.png)
 ![](./slides/Slide2.png)
 ![](./slides/Slide3.png)
