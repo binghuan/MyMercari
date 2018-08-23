@@ -36,7 +36,7 @@ let setupItemList = function (data) {
     let item = document.getElementById('item_template').cloneNode(true);
     item.style.display = "inline-block";
     let colums = item.getElementsByTagName("span");
-    colums[0].innerText = itemInfo.name + ", " + itemInfo.description;
+    colums[0].innerText = itemInfo.name;
     colums[1].innerText = itemInfo.price;
     colums[2].innerText = itemInfo.like_count;
 
