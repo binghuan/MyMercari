@@ -88,7 +88,7 @@ window.addEventListener('load', function (event) {
 });
 
 window.onscroll = function (e) {
-  if(document.documentElement.scrollTop > 0 ) {
+  if(document.documentElement.scrollTop > 0 || document.body.scrollTop > 0 ) {
     buttonScrollToTopView.style.display = "inline-block";
   } else {
     buttonScrollToTopView.style.display = "none";
