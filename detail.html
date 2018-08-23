@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./main.css" crossorigin="anonymous">
+    <title>Detail</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="action_bar" class="action_bar">
+            <div id="button_back">
+                <img src="./images/left-arrow.svg" class="icon_button">
+            </div>
+            <div id="item_title" style="height: 100%; flex:1;text-align: center;">
+                <span style="font-size: 40px;" id="page_title">{ITME_NAME}</span>
+            </div>
+            <div>
+                <img src="./images/search.svg" class="icon_button">
+            </div>
+            <div>
+                <img src="./images/share-arrow.svg" class="icon_button">
+            </div>
+        </div>
+        <div id="info_area" class="content_area">
+
+            <div>
+                <img src="./images/m93404474210_1.jpg" style="width: 100%; height: 375px;">
+            </div>
+            <div>
+                <span id="item_name">{ITME_NAME}</span>
+            </div>
+            <div style="margin-top: 10px;">
+                <div class="rounded_chip">
+                    <img src="./images/heart.svg" style="width: 12px; height: 12px;">いいね!
+                </div>
+                <span id="like_count"></span>
+                &#160;&#160;&#160;&#160;
+                <div class="rounded_chip">
+                    <img src="./images/blank-squared-bubble.svg" style="width: 12px; height: 12px;">コメント
+                </div>
+                <span id="comment_count"></span>
+                <div class="rounded_chip_small">
+                    <img src="./images/flag-black-shape.svg" style="width: 12px; height: 12px;">
+                </div>
+            </div>
+            <div style="background-color: rgb(236, 234, 235);padding-top: 15px;margin-top: 10px;">
+                商品の說明
+            </div>
+            <div style="padding-top: 10px;">
+                <span id="item_description">{ITME_DESCRIPTION}</span>
+            </div>
+        </div>
+        <div style="background-color: rgb(54,35,32); height: 85px; width: 100%;position: fixed; bottom: 0px;font-size: 40px;box-sizing: border-box;padding-top: 20px;padding-left: 20px;">
+            <span class="detalBottomText" id="item_price"></span><span
+                style="font-size: 10px;color: white;" id="item_shipping_fee"></span>
+            <div class="buyButton">
+購入手続き
+            </div>
+        </div>
+    </div>
+    <script src="./detail.js"></script>
+</body>
+
+</html>

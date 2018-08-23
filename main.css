@@ -1,0 +1,88 @@
+.action_bar {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding-top: 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.rounded_corner {
+    background-color: rgb(236, 234, 235);
+    height: 45px;
+    display: table;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.input_field {
+    height: 45px;
+    background: transparent;
+    width: 80%;
+    font-size: 1.5rem;
+    border-style: none;
+}
+
+.icon_button {
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.catatory_tile {
+    display: inline;
+    text-align: center;
+}
+
+.rounded_chip {
+    background-color: rgb(236, 234, 235);
+    display: inline;
+    border-radius: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rounded_chip {
+    background-color: rgb(236, 234, 235);
+    display: inline;
+    border-radius: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.rounded_chip_small {
+    background-color: rgb(236, 234, 235);
+    float: right;
+    border-radius: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content_area {
+    margin-top: 70px;
+}
+
+.detalBottomText {
+    color: white;
+}
+
+.buyButton {
+    background-color: red;
+    width: 165px;
+    height: 64px;
+    border-radius: 2px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 32px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
