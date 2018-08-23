@@ -4,13 +4,14 @@
 
 ![](./demo.gif)
 
-![](./slides/Slide1.png)
-![](./slides/Slide2.png)
-![](./slides/Slide3.png)
-![](./slides/Slide4.png)
-![](./slides/Slide5.png)
-![](./slides/Slide6.png)
-![](./slides/Slide7.png)
+![](./slides/Slide01.png)
+![](./slides/Slide02.png)
+![](./slides/Slide03.png)
+![](./slides/Slide04.png)
+![](./slides/Slide05.png)
+![](./slides/Slide06.png)
+![](./slides/Slide07.png)
+![](./slides/Slide08.png)
 
 ## Coding Quest from Mercari jp
 
