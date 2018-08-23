@@ -40,6 +40,8 @@ let setupItemList = function (data) {
     colums[1].innerText = itemInfo.price;
     colums[2].innerText = itemInfo.like_count;
 
+    item.getElementsByTagName("div")[0].style.backgroundImage = 'url(' + itemInfo.image + ')';
+    item.getElementsByTagName("img")[0].style.visibility = itemInfo.isSoldOut?"visible":"hidden";
     item.setAttribute('id', itemInfo.id);
     item.onclick = function () { showItemDetail(itemInfo.id); };
 
