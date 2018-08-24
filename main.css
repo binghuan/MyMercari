@@ -133,6 +133,25 @@
     height: 100px;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
+}
+
+.search_bar {
+    height: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.buying_button {
+    background-color: rgb(54, 35, 32);
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    font-size: 40px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
 }
